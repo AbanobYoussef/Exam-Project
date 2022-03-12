@@ -1,0 +1,25 @@
+#btnAddDiagnose{
+    font-size: 30px;
+    padding: 0px;
+   width: 30px;
+   border-radius: 5px 25px;
+    color: bisque;
+    background-color:#7d5fff;
+    position: relative;
+    /* left: 90px; */
+    border-radius: 5px 8px;
+    cursor: pointer;
+    float:left;
+}
+#HeadAddress{
+    background-color: #214263;
+    height: 40px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    /* margin-top: 25px; */
+    text-align: center;
+    border-radius: 5px 25px;
+   
+}

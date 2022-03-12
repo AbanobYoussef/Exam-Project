@@ -1,0 +1,120 @@
+body{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-right: 0;
+    background-color: #232B3E;
+}
+header{
+    background-color: rgb(27, 33, 45);
+    width: 1075px;
+    height: 58px;
+     right: 0;
+     top: 0;
+    display: inline;
+    position: fixed;
+}
+#side1{
+    width: 260px;
+    height: 659px;
+    background: #1A202E;
+    float: left;
+    display: inline;
+}
+#container{
+
+    margin: 20px auto;
+    padding: 20px;
+    background: #1A202E;
+    position: absolute;
+    right: 150px;
+    top:40px;
+    border-radius: 20px;
+}
+.set{
+    display: block;
+}
+#doctorForm label{
+    display:block;
+    font-size: 20px;
+    color: white;
+    /* margin-top: 25px; */
+    margin-bottom: 5px;
+    /* font-weight: bold; */
+}
+#doctorForm input[type="text"],input[type="password"],input[type="email"],input[type="date"],input[type="tel"]{
+    font-size: large;
+    width: 450PX;
+    height: 30PX;
+        border-radius: 15px;
+
+}
+#doctorForm input[type="radio"]
+{
+
+    font-size: large;
+    width: 50PX;
+    height: 20PX;
+    border-radius: 15px;
+    color: white;
+    font-size: 25px;
+
+}
+#btnSubmit,#btnEdit,#btnReset{
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    margin:20px ;
+    color: bisque;
+    background-color:#7d5fff;
+    position: relative;
+    /* left: 90px; */
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* #formTable{
+text-align: center;
+margin: 20px;
+padding: 10px;
+border: white 2px solid;
+float:right;
+} */
+#formTable td{
+padding-left: 20px;
+padding-top: 5px;
+/* border: white 2px solid; */
+
+}
+/* .doctorForm{
+ 
+} */
+#redioSpan{ 
+    font-size: 20px;
+    color: white;
+    /* margin-top: 25px; */
+    margin-bottom: 5px;
+    
+}
+#sideAddress{
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    /* margin-top: 25px; */
+    margin-top: -10px;
+    margin-bottom: 25px;
+    
+}
+#btnRegister{
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    margin:20px ;
+    color: bisque;
+    background-color:#7d5fff;
+    position: relative;
+    /* left: 90px; */
+    border-radius: 5px 15px;
+    cursor: pointer;
+}

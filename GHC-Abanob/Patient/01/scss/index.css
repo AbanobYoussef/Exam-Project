@@ -1,0 +1,240 @@
+* {
+  color: whitesmoke !important;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3873d8), color-stop(#305fb1), to(#152b52)) !important;
+  background: linear-gradient(#3873d8, #305fb1, #152b52) !important;
+}
+
+.bor {
+  -webkit-box-shadow: 5px 10px 10px 5px #152b52;
+          box-shadow: 5px 10px 10px 5px #152b52;
+}
+
+/*  start navbar*/
+.fcolor * {
+  color: whitesmoke !important;
+}
+
+.patient_img {
+  width: 50%;
+  height: 150px;
+  background-color: aqua;
+  color: red;
+  border-radius: 30px;
+}
+
+.sidenaveintem * {
+  background-color: inherit;
+  font-size: 25px;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+  border: none !important;
+}
+
+.btn-link:hover {
+  width: 100%;
+  background-color: #254683;
+  font-size: 25px;
+  color: whitesmoke;
+  border: none !important;
+}
+
+.subbtn:hover {
+  border: none !important;
+  width: 100%;
+  background-color: #c80d0d;
+  font-size: 25px;
+  color: rgba(245, 245, 245, 0.651);
+}
+
+hr {
+  border: 0.5px solid whitesmoke;
+  background-color: whitesmoke;
+  border-radius: 30px;
+}
+
+.viewprofile {
+  -webkit-box-shadow: 5px 10px 10px 5px #152b52;
+          box-shadow: 5px 10px 10px 5px #152b52;
+  background-color: linear-gradient(#3873d8, #305fb1, #152b52) !important;
+  display: none;
+  width: 100% !important;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.editprofile {
+  -webkit-box-shadow: 5px 10px 10px 5px #152b52;
+          box-shadow: 5px 10px 10px 5px #152b52;
+  background-color: linear-gradient(#3873d8, #305fb1, #152b52) !important;
+  display: none;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+legend {
+  font-size: 25px;
+}
+
+label {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.search_bar {
+  background-color: #000000;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ReadMore {
+  font-weight: bold;
+}
+
+.ReadMore:hover {
+  color: white;
+}
+
+.Mydoctors.bg-light {
+  display: contents;
+  display: none;
+  background-color: #163e5f !important;
+}
+
+.doc {
+  margin: 6px;
+  padding: 5px;
+}
+
+.Medicines_List {
+  border: 1px solid black;
+  background-color: gainsboro;
+}
+
+small {
+  display: none;
+}
+
+#myModal {
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
+  width: 100%;
+  -webkit-box-shadow: 5px 10px 15px grey;
+          box-shadow: 5px 10px 15px grey;
+}
+
+fieldset {
+  width: 100%;
+  background-color: linear-gradient(#3873d8, #305fb1, #152b52) !important;
+}
+
+.modal-content {
+  background-color: linear-gradient(#3873d8, #305fb1, #152b52) !important;
+  width: 122%;
+}
+
+.donere {
+  color: #2f00ff;
+  font-size: 23px;
+  font-weight: 700;
+  text-align: center;
+  -webkit-transition: font-size 3s;
+  transition: font-size 3s;
+}
+
+.donere:hover {
+  font-size: 25px;
+  color: #7c006b;
+}
+
+.conty {
+  width: 85%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+i {
+  margin-left: 10px !important;
+}
+
+#collapsibleNavId > ul:nth-child(2) > i.fa.fa-arrows-alt {
+  margin-right: 5px !important;
+}
+
+input, label, legend {
+  color: black !important;
+  font-weight: 900 !important;
+}
+
+.bg-dark {
+  background-color: #2263d4 !important;
+}
+
+body > nav > button {
+  border: none !important;
+}
+
+#myModal > div > div > fieldset {
+  position: relative;
+}
+
+.firstcontainer {
+  margin-top: 40px;
+}
+
+#sidebar {
+  background-color: #3232b8 !important;
+}
+
+.side-inner {
+  background-color: teal;
+  color: #000000;
+}
+
+.nav-menu ul li :hover {
+  background-color: whitesmoke !important;
+  color: #000000 !important;
+}
+
+.searchbar {
+  width: 50%;
+}
+
+.show {
+  padding-right: 590px !important;
+  display: block !important;
+}
+
+.modal-content {
+  width: 75em !important;
+  background-color: steelblue !important;
+}
+
+#Medicines_List, #Diagnose {
+  color: black !important;
+}
+
+.doc {
+  background-color: cornflowerblue !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#myModal > div > div > fieldset {
+  position: relative;
+  background-color: steelblue;
+  font-family: verdana, arial, helvetica, sans-serif;
+  border: 2px solid #2f00ff !important;
+  margin: 8px auto;
+  width: 74em;
+}
+
+.shon {
+  width: 150px;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=index.css.map */

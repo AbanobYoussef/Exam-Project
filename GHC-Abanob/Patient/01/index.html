@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/w3css.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="scss/index.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js" integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A==" crossorigin="anonymous"></script>
+
+    <title>Sidebar #1</title>
+</head>
+
+<body>
+
+
+    <aside class="sidebar">
+        <div class="toggle">
+            <a href="#" class="burger js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
+                <span></span>
+            </a>
+        </div>
+        <div class="side-inner">
+
+            <div class="profile">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.MFQsLgF9PGVXVLHi2C0wSgAAAA&pid=Api&rs=1&c=1&qlt=95&w=105&h=104" alt="Image" class="img-fluid">
+                <h3 class="name">Patient Name</h3>
+                <span class="country"></span>
+            </div>
+
+            <div class="counter d-flex justify-content-center ">
+                <!-- <div class="row justify-content-center"> -->
+                <div class="col">
+                    <strong class="number">892</strong>
+                    <span class="number-label">Posts</span>
+                </div>
+                <div class="col">
+                    <strong class="number">22.5k</strong>
+                    <span class="number-label">Followers</span>
+                </div>
+                <div class="col">
+                    <strong class="number">150</strong>
+                    <span class="number-label">Following</span>
+                </div>
+                <!-- </div> -->
+            </div>
+
+            <div class="nav-menu">
+                <ul>
+                    <li class="btnhome"><a><span class="icon-home mr-3"></span>MY Home</a></li>
+                    <li class="btnprofile"><a><span class="icon-home mr-3"></span>MY profile</a></li>
+                    <li class="Edite_profile"><a href="#"><span class="icon-search2 mr-3"></span>Edite profile</a></li>
+                    <li class="MY_DOCTORS"><a href="#"><span class="icon-notifications mr-3"></span>MY DOCTORS</a></li>
+                    <li><a href="http://localhost:8080/"><span class="icon-sign-out mr-3"></span>Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </aside>
+    <br>
+    <br>
+
+    <main>
+
+        <div class="container">
+            <br>
+
+            <div class="row justify-content-right">
+                <div class="container-fluid viewprofile">
+                    <fieldset class="border p-5">
+                        <legend class="w-auto">
+                            <h4>Patient personal Data</h4>
+                        </legend>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4 ">
+                                    <div class="form-group divitemform">
+                                        <label for="National_Id">National Id</label>
+                                        <input disabled type="text" name="National_Id" id="National_Id" class="form-control" placeholder="National_Id" aria-describedby="helpId">
+                                        <small id="helpId" class="text-muted">Help text</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="form-group divitemform">
+                                        <label for="Name">Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                        <input disabled type="text" name="Name" id="Name" class="form-control" placeholder="Name" aria-describedby="helpId">
+                                        <small id="helpId" class="text-muted">Help text</small>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="form-group divitemform">
+                                        <label for="Birth_Date">Birth Date &nbsp;</label>
+                                        <input disabled type="text" name="Birth_Date" id="Birth_Date" class="form-control" placeholder="mm/dd/yyyy" aria-describedby="helpId">
+                                        <small id="helpId" class="text-muted">Help text</small>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="form-group divitemform">
+                                        <label for="Address">Address &nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                        <input disabled type="text" name="Address" id="Address" class="form-control" placeholder="st..." aria-describedby="helpId">
+                                        <small id="helpId" class="text-muted">Help text</small>
+                                    </div>
+                                    <div class="form-group divitemform">
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label">
+                                          <input disabled type="radio"  class="form-check-input" name="optradio">Male
+                                      </label>
+                                        </div>
+                                        <div class="form-check-inline">
+                                            <label class="form-check-label">
+                                          <input disabled type="radio" class="form-check-input" name="optradio">Female
+                                      </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="form-group divitemform">
+                                        <label for="Phone">Phone &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                        <input type="text" name="Phone" id="Phone" class="form-control" placeholder="Phone" aria-describedby="helpId">
+                                        <small id="helpId" class="text-muted">Help text</small>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="form-group divitemform">
+                                        <label for="Blood_Type">Blood Type</label>
+                                        <input type="text" name="Blood_Type" id="Blood_Type" class="form-control" placeholder="mm/dd/yyyy" aria-describedby="helpId">
+                                        <small id="helpId" class="text-muted">Help text</small>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="border p-5">
+                        <legend class="w-auto">
+                            <h4>Patient Diagnoses</h4>
+                        </legend>
+                        <div class="container-fluid ">
+                            <div class="row">
+                                <div class="container-fluid  search_bar">
+
+                                    <div class="col">
+                                        <br>
+                                        <label style="color: whitesmoke !important;">Diagnostic History  </label>
+                                        <input type="text" class="form-control divitemform searchbar" name="" id="" aria-describedby="helpId" placeholder="Search For Department">
+                                        <br>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <br>
+                            <div class="container-fluid appendinfo">
+                            </div>
+
+                        </div>
+
+                </div>
+                </fieldset>
+                <br>
+                <br>
+
+            </div>
+            <div class="container-fluid editprofile">
+                <fieldset class="border p-5">
+                    <legend class="w-auto">
+                        <h4>Edit Patient</h4>
+                    </legend>
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-md-6 col-xm-12">
+                                <div class="form-group divitemform">
+                                    <label for="National_IDE">National_ID</label> &nbsp;&nbsp;<span id=ID_error>Write 14 Numbers</span>
+
+                                    <input type="text" name="National_IDe" id="National_IDE" class="form-control" placeholder="National_ID" aria-describedby="helpId">
+                                </div>
+                                <div class="form-group divitemform">
+                                    <label for="BirthE">Birth</label>
+                                    <input type="text" name="Birthe" id="BirthE" class="form-control" placeholder="mm/dd/yyyy" aria-describedby="helpId">
+                                </div>
+                                <div class="form-group divitemform">
+                                    <label for="BloodE">Blood Type</label>&nbsp;&nbsp;
+                                    <span id=Blood_error>Out of range or write it capital</span>
+                                    <input type="text" name="Blood" id="BloodE" class="form-control" placeholder=" blood type " aria-describedby="helpId">
+                                </div>
+                                <div class="form-group divitemform">
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                        <input type="radio" value="male" class="form-check-input male" name="optradioE">Male
+                                    </label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <label class="form-check-label">
+                                        <input type="radio" value="female" class="form-check-input female" name="optradioE">Female
+                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xm-6">
+                                <div class="form-group divitemform">
+                                    <label for="NameE">Name</label>&nbsp;&nbsp;
+                                    <span id=Name_error>Numbers and spical chracters not allowed</span>
+                                    <input type="text" name="Name" id="NameE" class="form-control" placeholder="Name" aria-describedby="helpId">
+                                </div>
+                                <div class="form-group divitemform">
+                                    <label for="PhoneE">Phone</label>&nbsp;&nbsp;
+                                    <span id=Phone_error>write 11 numbers starts with 010|012|015|011</span>
+                                    <input type="text" name="Phone" id="PhoneE" class="form-control" placeholder="" aria-describedby="helpId">
+                                </div>
+                                <div class="form-group divitemform">
+                                    <label for="AddressE">Addressed</label>
+                                    <input type="text" name="Addressede" id="AddressE" class="form-control" placeholder="st..." aria-describedby="helpId">
+                                </div>
+                            </div>
+
+                            <span class="conty"><h4 class="donere" >Update</h4></span>
+                        </div>
+                    </div>
+                </fieldset>
+                <br>
+                <br>
+
+            </div>
+            <div class="container-fluid Mydoctors  bg-light row">
+
+            </div>
+            <div class="container-fluid">
+                <div class="container-fluid home">
+                    <div class="row text-left">
+                        <div class="col-md-2">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.h_pGnrVpg-M837FCS8OylgAAAA&pid=Api&P=0&w=300&h=300" class="shon" alt="">
+                        </div>
+                        <div class="col-md-10">
+                            <b style="color: black  !important;"> THE HUMAN HEART</b>
+                            <br> The human heart is by far one of the most vital organs of the body. It has a mass that ranges from 250 grams to 350 grams. Its contraction and expansion results in 2000 gallons of blood being pumped through the body’s
+                            blood vessels per day. It’s located in the middle of the chest protected by the ribcage. Its building blocks are a unique type of muscle known as the myocardium, and it’s enclosed by a double-walled membranous sac known as
+                            the pericardium. The double-walled membrane houses the pericardial fluid which cushions the heart preventing shock and nourishing it.
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="row text-left">
+                        <div class="col">
+                            <img style="width: 60%;" src="./images/Green and White Utilitarian Social Distancing Business Floor Decal.png" alt="">
+                        </div>
+                        <div class="col">
+                            <img style="width: 70%;" src="./images/Blue Syringe Illustrated Medical Professional T-Shirt.png" alt="">
+                        </div>
+                        <div class="col">
+                            <img style="width: 100%;" height="100%" src="https://tse2.mm.bing.net/th?id=OIP.K1f-WRPM7FTAGYm8akaWxwHaE8&pid=Api&P=0&w=269&h=180" alt="">
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="row text-left">
+                        <div class="col">
+                            <img style="width: 260px; height: 100%" src="./images/Green and White Utilitarian Social Distancing Business Floor Decal.png" alt="">
+                        </div>
+                        <div class="col" style="font-size: 20px;">
+                            Responsibility of Doctor Doctor prevents epidemic patients and it is done by physician. To cure their patients. They should handle their patient during day and night and shouldcures serious patients. They should encourage their patient to fight the disease
+                            they have. Doctor are the source of happiness. They should treat their patients with smile and cheerfully. </div>
+                        <div class="col" style="font-size: 20px;">
+                            Health, safety and nutrition are three of the most important factors to consider when raising a child. In other words, every child should be raised with proper nutrition, good health and safety as possible, allowing him or her to grow with a great well-being.
+                            Something that I've learned about this class is that in today’s fast-paced world where the child’s safety and health issues are rapidly growing,
+
+
+                        </div>
+
+                    </div>
+                    <br>
+                    <div class="row text-left" style="font-size: 20px;">
+                        more than fifty sites online present health and safety guidelines for the public to consider. These websites given to us has really opened up a door for me to look into my own life as well as my child's development. Another thing I've learned…show more
+                        content… This class and those three things have taught me about balancing my food choices to keep me healthy and to keep my sugars in check to keep me and my baby safe. I've really appre ciated the knowledge from this textbook
+                        and through the websites on this matter. There are a lot more things I've
+
+                    </div>
+                    <hr>
+                    <div class="row text-left">
+                        <div class="col-md-8" style="font-size: 20px;">
+                            he Narendra Modi government’s challenge of smoothly rolling out vaccines for Covid-19 has an unexpected task on its to-do list — putting to rest worries that a small section of doctors, nurses, and other healthcare workers has about being inoculated.
+                            The Ministry of Health had announced Saturday that the vaccine rollout in India would begin 16 January, starting with healthcare workers, then moving to frontline workers and people above the age of 50. A handful of doctors
+                            ThePrint spoke to expressed doubts about the safety and efficacy of the vaccines, and some displeasure about the lack of clarity around them as well as the sign-up process for inoculation. However, the medical practitioners
+                            are not saying they won’t take the vaccine, with senior doctors insisting that awareness campaigns are the need of the hour. </div>
+
+                        <div class="col-md-4">
+                            <img style="width: 100%; height:60%" src="https://tse3.mm.bing.net/th?id=OIP.FPT5bWQMiZx34TdHdQa_nQHaCn&pid=Api&P=0&w=596&h=211" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- Button to Open the Modal -->
+                <button type="button" style="display: none;" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Open modal
+          </button>
+
+                <!-- The Modal -->
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content ffff">
+
+                            <fieldset class="border p-5">
+                                <legend class="w-auto"> View Diagnose</legend>
+                                <div class="container">
+                                    <div class="row">
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="Doctor_Name">Doctor Name</label>
+                                                <input disabled type="text" name="Doctor_Name" id="DoctorName" class="form-control" placeholder="" aria-describedby="helpId">
+                                                <small id="helpId" class="text-muted">Help text</small>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Date">Date</label>
+                                                <input disabled type="datetime " name="Date" id="Date" class="form-control" placeholder="mm/dd/yyyy" aria-describedby="helpId">
+                                                <small id="helpId" class="text-muted">Help text</small>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="Department">Department</label>
+                                                <input disabled type="text" name="Department" id="Department" class="form-control" placeholder="" aria-describedby="helpId">
+                                                <small id="helpId" class="text-muted">Help text</small>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Disease">Disease</label>
+                                                <input disabled type="text " name="Disease" id="Disease" class="form-control" placeholder="Disease" aria-describedby="helpId">
+                                                <small id="helpId" class="text-muted">Help text</small>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="Medicines_List">Medicines_List</label>
+                                                 <table id="PrescriptionTbl" class="table table-striped" style="width: 100%; margin:0px;padding: 0px; box-shadow: none;">
+                                                        <thead>
+                                                            <tr class="header">
+                                                                <th style="width:35%;">Medicine</th>
+                                                                <th style="width:35%;">Dose</th>
+                                                                <th style="width:35%;">Notes</th>
+                                                                <!-- <th style="width:30%;">note</th> -->
+                                                                <!-- <th style="width:20%; text-align: right;"># Action</th> -->
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody id='tbody4'>
+                                                    
+                                                        </tbody>
+                                                    </table>
+                                                <small id="helpId" class="text-muted">Help text</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="Diagnose">Diagnose</label>
+                                                <div disabled id="Diagnose" class="Medicines_List contaier-fluid">1 <br>
+                                                </div>
+                                                <small id="helpId" class="text-muted">Help text</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 text-center">
+
+                                            <button class=" btn btn btn-light" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        </div>
+
+    </main>
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="ts/ts.js"></script>
+    <script src="js/DataImport.js" type='module'></script>
+</body>
+
+</html>

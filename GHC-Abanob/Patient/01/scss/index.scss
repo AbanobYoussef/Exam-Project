@@ -1,0 +1,211 @@
+$shadow:5px 10px 10px 5px#152b52;
+$fontcolornavbar:whitesmoke !important;
+$fontdashbored:20pt;
+$bgcolor:linear-gradient(#3873d8, #305fb1, #152b52 )!important;
+*{
+    color:whitesmoke !important;
+    
+}
+body{
+    background: $bgcolor;
+}
+.bor{
+box-shadow: $shadow;
+}
+/*  start navbar*/
+.fcolor * {
+    color: $fontcolornavbar;
+}
+
+.patient_img{
+    
+width: 50%;
+height: 150px;
+background-color:aqua;
+color: red;
+border-radius: 30px;
+}
+.sidenaveintem *{
+    background-color: inherit;
+    font-size:25px;
+transition: background-color 1s;
+border: none !important;
+}
+.btn-link:hover  {
+    
+    width: 100%;
+    background-color: #254683;
+    font-size:25px;
+    color: whitesmoke;
+    border: none !important;
+}
+.subbtn:hover  {
+    border: none !important;
+    width: 100%;
+    background-color: rgb(200, 13, 13);
+    font-size:25px;
+    color: rgba(245, 245, 245, 0.651);
+}
+hr{
+border: 0.5px solid whitesmoke;
+background-color: whitesmoke;
+border-radius: 30px;
+}
+.viewprofile{
+    box-shadow: $shadow;
+    background-color: $bgcolor;
+  //  background-image: url("https://www.sdglobaltech.com/wp-content/uploads/2017/01/The-Must-Have-modules-of-a-Hospital-Management-System-1200x675.jpg");
+    display: none;
+   width: 100% !important;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+  //  filter: brightness(50%); 
+
+}
+.editprofile{
+    box-shadow: $shadow;
+    background-color:$bgcolor;
+  //  background-image: url("https://www.sdglobaltech.com/wp-content/uploads/2017/01/The-Must-Have-modules-of-a-Hospital-Management-System-1200x675.jpg");
+   display: none;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+  //  filter: brightness(50%); 
+
+}
+legend{
+    font-size:25px;
+    
+}
+.divitemform{
+}
+label{
+    font-size: 25px;
+    font-weight: 700;
+}
+.search_bar{
+    background-color: #000000;
+    border-radius: 30px;
+    display: flex;
+}
+.ReadMore{
+   font-weight: bold; 
+}
+.ReadMore:hover{
+    color:rgb(255, 255, 255);
+}
+.Mydoctors.bg-light{
+display:contents;
+display: none;
+
+background-color: rgb(22, 62, 95)  !important;
+}
+.doc{
+    margin: 6px;
+    padding: 5px;
+    }
+.Medicines_List{
+    border: 1px solid black ;
+    background-color: gainsboro;
+}
+small{
+    display: none;
+}
+#myModal{
+       filter: brightness(90%); 
+    width: 100%;
+    box-shadow: 5px 10px 15px grey;
+}
+fieldset{
+  width: 100%;
+  background-color: $bgcolor;
+}
+.modal-content{
+background-color: $bgcolor;
+width: 122%;
+
+} 
+
+
+.donere{
+    color: rgb(47, 0, 255);
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+    transition: font-size 3s;
+}
+.donere:hover{
+    font-size:25px;
+
+color: rgb(124, 0, 107);
+}
+.conty{
+    width: 85%;
+
+    box-sizing: border-box;
+}
+i{
+   // padding-left: 10px !important;
+    margin-left: 10px !important;
+}
+#collapsibleNavId > ul:nth-child(2) > i.fa.fa-arrows-alt{
+    margin-right: 5px !important;
+}
+input,label ,legend {
+    color: black !important;
+    font-weight: 900 !important;
+}
+.bg-dark{
+    
+   background-color: #2263d4 !important;
+}
+body > nav > button{
+border: none !important;}
+#myModal > div > div > fieldset{
+    position: relative;
+}
+.firstcontainer {
+    margin-top: 40px;
+}
+#sidebar{
+    background-color: #3232b8 !important;
+}
+.side-inner {
+    background-color: teal;
+   color: #000000; 
+}
+
+.nav-menu ul li :hover{
+    background-color: whitesmoke !important;
+   color: #000000 !important; 
+}
+.searchbar{
+    width: 50%;
+}
+.show{
+    padding-right: 590px !important;
+    display: block !important;
+}
+.modal-content{
+    width: 75em !important ;
+    background-color:steelblue !important ;
+}
+#Medicines_List,#Diagnose{
+    color: black !important;
+}.doc{
+    background-color:cornflowerblue !important;
+    box-sizing: border-box;
+
+}
+#myModal > div > div > fieldset {
+    position: relative;
+    background-color: steelblue;
+    font-family: verdana, arial, helvetica, sans-serif; 
+    border: 2px solid rgb(47, 0, 255) !important;
+    margin: 8px auto;
+    width: 74em;
+}
+.shon{
+width :150px;
+border-radius: 50%;
+
+}
