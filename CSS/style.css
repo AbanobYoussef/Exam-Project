@@ -1,0 +1,65 @@
+
+body{
+    color: white;
+}
+.header{
+    border-radius: 20px  20px 0 0;
+    margin: auto;
+    background-color: #53b0ed;
+}
+
+.container{
+    margin-top: 2px;
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 0;
+}
+.footer{
+    
+    border-radius:0 0 20px 20px;
+    text-align: center;
+    background-color: #373536;
+}
+.body{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 50px;
+    
+}
+
+.active_div{
+    display: block;
+}
+.deactive_div{
+    display: none;
+}
+
+.Submit{
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color:#373536;
+    color: white;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.ques{
+    background-color:  gray;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ans{
+    background-color: darkgray;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.warning{
+    color: red;
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
